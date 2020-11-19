@@ -22,6 +22,7 @@ Pod::Spec.new do |spec|
     core.tvos.deployment_target = tvos_deployment_target
     core.compiler_flags = '-fno-exceptions'
     core.exclude_files = [
+    'Source/include/*',
     'Source/Classes/include/*',
     'Source/AsyncDisplayKitIGListKit/*'
     ]
