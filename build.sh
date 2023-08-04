@@ -9,8 +9,8 @@
 # echo ************* diagnostics end
 
 # run this on a 2x device until we've updated snapshot images to 3x
-PLATFORM="${TEXTURE_BUILD_PLATFORM:-platform=iOS Simulator,OS=16.2,name=iPhone SE (3rd generation)}"
-SDK="${TEXTURE_BUILD_SDK:-iphonesimulator16.2}"
+PLATFORM="${TEXTURE_BUILD_PLATFORM:-platform=iOS Simulator,OS=16.4,name=iPhone 14}"
+SDK="${TEXTURE_BUILD_SDK:-iphonesimulator16.4}"
 DERIVED_DATA_PATH="~/ASDKDerivedData"
 
 # It is pitch black.
@@ -112,12 +112,12 @@ build_listkit_xcode_spm_integration)
     echo "Regenerate SPM layout"
     swift scripts/generate_spm_sources_layout.swift
     echo "Building AsyncDisplayKit+IGListKit via Xcode's Swift Package Manager"
-    echo "Xcode 12.2+ required"
+    echo "Xcode 14.3.1+ required"
     set -o pipefail && xcodebuild clean \
         -project examples/ASIGListKitSPM/Sample.xcodeproj \
         -scheme Sample \
         -sdk "iphonesimulator" \
-        -destination "platform=iOS Simulator,name=iPhone 12" \
+        -destination "platform=iOS Simulator,name=iPhone 14" \
         build
     success="1"
     ;;
@@ -272,7 +272,7 @@ carthage|all)
     mv $spm_example_project $carthge_example_project_workaround
 
     # carthage job
-    set -o pipefail && carthage update && carthage build --no-skip-current
+    set -o pipefail && carthage update --use-xcframeworks && carthage build --no-skip-current --use-xcframeworks
 
     #revert back workaround
     mv $carthge_example_project_workaround $spm_example_project
