@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -39,9 +39,9 @@ func IGListKit(enabled: Bool) -> [CSetting] {
 let package = Package(
     name: "Texture",
     platforms: [
-             .macOS(.v10_15),
-             .iOS(.v10),
-             .tvOS(.v10)
+             .macOS(.v12),
+             .iOS(.v11),
+             .tvOS(.v11)
          ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -55,7 +55,7 @@ let package = Package(
             targets: ["AsyncDisplayKitIGListKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/3a4oT/PINRemoteImage.git", .branch("15-03-21-spm")),
+        .package(url: "https://github.com/pinterest/PINRemoteImage.git", .upToNextMajor(from: "3.0.3")),
         .package(url: "https://github.com/3a4oT/IGListKit", from: "4.0.1"),
     ],
     targets: [
