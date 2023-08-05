@@ -272,7 +272,7 @@ carthage|all)
     mv $spm_example_project $carthge_example_project_workaround
 
     # carthage job
-    set -o pipefail && carthage update --use-xcframeworks && carthage build --no-skip-current --use-xcframeworks
+    set -o pipefail && carthage update && carthage build --no-skip-current
 
     #revert back workaround
     mv $carthge_example_project_workaround $spm_example_project
