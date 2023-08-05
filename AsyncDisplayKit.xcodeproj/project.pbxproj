@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,16 @@
 		058D0A40195D057000B7D73C /* ASTextNodeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 058D0A36195D057000B7D73C /* ASTextNodeTests.mm */; };
 		058D0A41195D057000B7D73C /* ASTextNodeWordKernerTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 058D0A37195D057000B7D73C /* ASTextNodeWordKernerTests.mm */; };
 		05EA6FE71AC0966E00E35788 /* ASSnapshotTestCase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05EA6FE61AC0966E00E35788 /* ASSnapshotTestCase.mm */; };
+		0A4382002A7EE0A900FF22EE /* libwebp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FB2A7EE0A900FF22EE /* libwebp.xcframework */; };
+		0A4382012A7EE0A900FF22EE /* libwebp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FB2A7EE0A900FF22EE /* libwebp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A4382022A7EE0AA00FF22EE /* IGListDiffKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FC2A7EE0A900FF22EE /* IGListDiffKit.xcframework */; };
+		0A4382032A7EE0AA00FF22EE /* IGListDiffKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FC2A7EE0A900FF22EE /* IGListDiffKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A4382042A7EE0AA00FF22EE /* IGListKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FD2A7EE0A900FF22EE /* IGListKit.xcframework */; };
+		0A4382052A7EE0AA00FF22EE /* IGListKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FD2A7EE0A900FF22EE /* IGListKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A4382062A7EE0AA00FF22EE /* PINCache.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FE2A7EE0A900FF22EE /* PINCache.xcframework */; };
+		0A4382072A7EE0AA00FF22EE /* PINCache.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FE2A7EE0A900FF22EE /* PINCache.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A4382082A7EE0AB00FF22EE /* PINOperation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FF2A7EE0A900FF22EE /* PINOperation.xcframework */; };
+		0A4382092A7EE0AB00FF22EE /* PINOperation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4381FF2A7EE0A900FF22EE /* PINOperation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18C2ED7F1B9B7DE800F627B3 /* ASCollectionNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C2ED7C1B9B7DE800F627B3 /* ASCollectionNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18C2ED831B9B7DE800F627B3 /* ASCollectionNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18C2ED7D1B9B7DE800F627B3 /* ASCollectionNode.mm */; };
 		1A6C000D1FAB4E2100D05926 /* ASCornerLayoutSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A6C000B1FAB4E2000D05926 /* ASCornerLayoutSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -530,6 +540,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0A43820A2A7EE0AB00FF22EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A4382052A7EE0AA00FF22EE /* IGListKit.xcframework in Embed Frameworks */,
+				0A4382092A7EE0AB00FF22EE /* PINOperation.xcframework in Embed Frameworks */,
+				0A4382012A7EE0A900FF22EE /* libwebp.xcframework in Embed Frameworks */,
+				0A4382072A7EE0AA00FF22EE /* PINCache.xcframework in Embed Frameworks */,
+				0A4382032A7EE0AA00FF22EE /* IGListDiffKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		044285011BAA3CC700D16268 /* AsyncDisplayKit.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = AsyncDisplayKit.modulemap; sourceTree = "<group>"; };
 		044285051BAA63FE00D16268 /* ASBatchFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBatchFetching.h; sourceTree = "<group>"; };
@@ -625,6 +653,11 @@
 		058D0A44195D058D00B7D73C /* ASBaseDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBaseDefines.h; sourceTree = "<group>"; };
 		05EA6FE61AC0966E00E35788 /* ASSnapshotTestCase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ASSnapshotTestCase.mm; sourceTree = "<group>"; };
 		05F20AA31A15733C00DCA68A /* ASImageProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASImageProtocols.h; sourceTree = "<group>"; };
+		0A4381FB2A7EE0A900FF22EE /* libwebp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libwebp.xcframework; path = Carthage/Build/libwebp.xcframework; sourceTree = "<group>"; };
+		0A4381FC2A7EE0A900FF22EE /* IGListDiffKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IGListDiffKit.xcframework; path = Carthage/Build/IGListDiffKit.xcframework; sourceTree = "<group>"; };
+		0A4381FD2A7EE0A900FF22EE /* IGListKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IGListKit.xcframework; path = Carthage/Build/IGListKit.xcframework; sourceTree = "<group>"; };
+		0A4381FE2A7EE0A900FF22EE /* PINCache.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINCache.xcframework; path = Carthage/Build/PINCache.xcframework; sourceTree = "<group>"; };
+		0A4381FF2A7EE0A900FF22EE /* PINOperation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINOperation.xcframework; path = Carthage/Build/PINOperation.xcframework; sourceTree = "<group>"; };
 		18C2ED7C1B9B7DE800F627B3 /* ASCollectionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCollectionNode.h; sourceTree = "<group>"; };
 		18C2ED7D1B9B7DE800F627B3 /* ASCollectionNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ASCollectionNode.mm; sourceTree = "<group>"; };
 		1950C4481A3BB5C1005C8279 /* ASEqualityHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEqualityHelpers.h; sourceTree = "<group>"; };
@@ -1098,10 +1131,15 @@
 				CC36C19A218B846F00232F23 /* CoreLocation.framework in Frameworks */,
 				CC36C198218B846300232F23 /* QuartzCore.framework in Frameworks */,
 				CC36C196218B845B00232F23 /* AVFoundation.framework in Frameworks */,
+				0A4382062A7EE0AA00FF22EE /* PINCache.xcframework in Frameworks */,
 				CC36C194218B844800232F23 /* Foundation.framework in Frameworks */,
 				CC36C193218B842E00232F23 /* CoreGraphics.framework in Frameworks */,
+				0A4382082A7EE0AB00FF22EE /* PINOperation.xcframework in Frameworks */,
+				0A4382042A7EE0AA00FF22EE /* IGListKit.xcframework in Frameworks */,
 				CC36C191218B841A00232F23 /* CoreText.framework in Frameworks */,
+				0A4382002A7EE0A900FF22EE /* libwebp.xcframework in Frameworks */,
 				CC36C18F218B841600232F23 /* UIKit.framework in Frameworks */,
+				0A4382022A7EE0AA00FF22EE /* IGListDiffKit.xcframework in Frameworks */,
 				92DD2FE61BF4D05E0074C9DD /* MapKit.framework in Frameworks */,
 				B350625E1B0111780018CF92 /* AssetsLibrary.framework in Frameworks */,
 				B350625D1B0111740018CF92 /* Photos.framework in Frameworks */,
@@ -1160,6 +1198,11 @@
 		058D09AE195D04C000B7D73C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A4381FC2A7EE0A900FF22EE /* IGListDiffKit.xcframework */,
+				0A4381FD2A7EE0A900FF22EE /* IGListKit.xcframework */,
+				0A4381FB2A7EE0A900FF22EE /* libwebp.xcframework */,
+				0A4381FE2A7EE0A900FF22EE /* PINCache.xcframework */,
+				0A4381FF2A7EE0A900FF22EE /* PINOperation.xcframework */,
 				CD0F261B25CA03BB00735A79 /* WebKit.framework */,
 				CC36C19B218B847400232F23 /* CoreMedia.framework */,
 				CC36C199218B846F00232F23 /* CoreLocation.framework */,
@@ -2180,6 +2223,7 @@
 				B35061D61B010EDF0018CF92 /* Frameworks */,
 				B35061D71B010EDF0018CF92 /* Headers */,
 				B35061D81B010EDF0018CF92 /* Resources */,
+				0A43820A2A7EE0AB00FF22EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2616,7 +2660,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/TestHost/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2633,7 +2680,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				INFOPLIST_FILE = Tests/TestHost/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2814,7 +2864,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = Source/AsyncDisplayKit.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_CFLAGS = (
@@ -2847,7 +2901,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = Source/AsyncDisplayKit.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = (
@@ -2944,7 +3002,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				INFOPLIST_FILE = Tests/TestHost/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2970,7 +3031,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = Source/AsyncDisplayKit.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = (
